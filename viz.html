@@ -145,7 +145,7 @@
             .attr("d", d3.svg.arc().outerRadius(ry - 180).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
             .on("mousedown", mousedown);
 	//please note that rawgit is in end of life, need to change the hosting to somewhere else. Content type needs to be application/json
-        d3.json("https://cdn.rawgit.com/kevpgoff/kevpgoff.github.io/b3f04534/TASKS%20AND%20PHASES.json", function(classes) {
+        d3.json("https://rawcdn.githack.com/kevpgoff/kevpgoff.github.io/0218a1b2d4688fccfe2d78236b2f50cf01ab7b3a/TASKS%20AND%20PHASES.json", function(classes) {
 
             var nodes = cluster.nodes(packages.root(classes)),
                 links = packages.imports(nodes),
